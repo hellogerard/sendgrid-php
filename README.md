@@ -5,8 +5,15 @@ This library allows you to quickly and easily send emails through SendGrid using
 Licensed under the MIT License.
 
 ## Install ##
+
 ```
 git clone git@github.com:sendgrid/sendgrid-php.git
+```
+
+Install dependencies via [`Composer`](http://getcomposer.org)
+
+```
+php composer.phar install
 ```
 
 ## Testing ##
@@ -39,10 +46,10 @@ Before we begin using the library, its important to understand a few things abou
 
 ## Mail Usage ##
 
-To begin using this library, you must first include it
+To begin using this library, you must first include the `Composer` autoloader
 
 ```php
-include 'path/to/sendgrid-php/SendGrid_loader.php';
+include 'vendor/autoload.php';
 ```
 
 Then, initialize the SendGrid object with your SendGrid credentials
